@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(130, 228, 207, 0.897);
+  padding: 15px;
+}
+.box {
+  max-width: 1000px;
+  background-color: rgba(84, 214, 84, 0.897);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+.box-header_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
+.box-header_top h1 {
+  align-items: center;
+  color: rgb(25, 82, 55);
+  margin-bottom: 30px;
+  font-size: 45px;
+}
+.box-header_top input {
+  height: 30px;
+  padding: 5px;
+  width: 300px;
+  border: 1px solid rgb(5, 133, 5);
+  border-radius: 5px;
+  font-size: 20px;
+  color: green;
+  background-color: rgb(219, 247, 237);
+  cursor: pointer;
+  transition: 0.35s;
+}
+.box-header_top input:hover {
+  background-color: rgb(168, 230, 208);
+  transition: 0.35s;
+}
+.box-header_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.box-text {
+  width: 50%;
+  height: 100px;
+  min-width: 300px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(234, 250, 245);
+  padding: 10px;
+  color: rgb(22, 61, 22);
+  font-size: 16px;
+}
+.box-button {
+  margin: 15px;
+  width: 30%;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(31, 112, 112);
+  color: aliceblue;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.box-button:hover {
+  background-color: rgb(126, 192, 192);
+  transition: 0.35s;
+}
+@media (max-width: 500px) {
+  .box-header_top input {
+    width: 250px;
+  }
+  .box-text {
+    min-width: 250px;
+  }
+}
+.box-bottom {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.task-box {
+  background-color: rgb(83, 145, 59);
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+.task-box p {
+  color: aliceblue;
+}
+.task-box button {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: green;
+  color: aqua;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.task-box button:hover {
+  color: rgb(179, 238, 238);
+  background-color: rgb(0, 128, 111);
+  transition: 0.35s;
+}
+@media (max-width: 500px) {
+  .box-bottom {
+    width: 95%;
+  }
+}
