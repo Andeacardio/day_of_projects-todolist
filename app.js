@@ -2,7 +2,6 @@ const inputText = document.querySelector(".box-text");
 const create = document.querySelector(".box-button");
 const tasks = document.querySelector(".box-bottom");
 const deleteBtn = document.querySelector(".delete-btn");
-const lastPage = localStorage.getItem("lastVisited");
 const inputData = document.querySelector(".box-input");
 
 // get tasks counter
@@ -15,6 +14,7 @@ if (name1 === null) {
 }
 
 //check last visited date or set current date
+const lastPage = localStorage.getItem("lastVisited");
 if (lastPage === null) {
   const date = new Date();
   const currentDate2 = date.toLocaleDateString();
